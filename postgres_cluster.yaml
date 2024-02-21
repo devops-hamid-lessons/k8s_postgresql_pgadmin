@@ -1,0 +1,25 @@
+kind: "postgresql"
+apiVersion: "acid.zalan.do/v1"
+
+metadata:
+  name: "test-cluster"
+  namespace: "default"
+  labels:
+    team: acid
+
+spec:
+  teamId: "acid"
+  postgresql:
+    version: "15"
+  numberOfInstances: 3
+  volume:
+    size: "10Gi"
+
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 100Mi
+    limits:
+      cpu: 500m
+      memory: 500Mi
