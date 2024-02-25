@@ -47,6 +47,7 @@ To do so, use `expose` command to create a new `LoadBalancer` service, exposing 
   
 ## Step 3: An example postgresql cluster deployment using a .yaml file
 Option 1. If you refer to the `postgres-operator-ui`, it will help you to deploy or destroy a postgresql cluster graphically and much straightforwardly. As pic above, Just Check it, needless to explain more.
+
 Option 2. Write and deploy a yaml file by your self.
 * For this option we need to create a yaml file of type `postgresql` and provide required params.
 * `postgresql` is a CRD type defined when installing operator. `zalando` operator knows this type and when you apply a yaml file of it, it will grab that yaml file and deploy the defined cluster for you.
